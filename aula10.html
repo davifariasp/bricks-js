@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta content="text/html;charset=utf-8" 
+      http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+</head>
+
+<html>
+<canvas id="gameCanvas" width="800" height="600"></canvas>
+
+<script src = "World.js"></script>
+<script src = "Subject.js"></script>
+<script src = "Observer.js"></script>
+<script src = "Utils.js"></script>
+<script src = "Input.js"></script>
+<script src = "Bricks.js"></script>
+<script src = "Ball.js"></script>
+<script src = "Paddle.js"></script>
+<script src = "Achievements.js"></script>
+
+<script>
+	var canvas;
+	var canvasContext;
+	var world;
+
+	window.onload = function() {
+		canvas = document.getElementById('gameCanvas');
+        canvasContext = canvas.getContext('2d');
+
+		world = new World(canvas, canvasContext);
+		world.iniciar();
+	}
+	
+
+</script>
+
+</html>
